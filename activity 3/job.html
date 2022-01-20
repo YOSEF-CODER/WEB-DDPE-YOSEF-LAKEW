@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="yet anoyher activity"/>
+<meta name="author" content="group-2">
+<meta name="keyword" content="activity,webpage,form,job application,room reservation"> 
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+<title>Home</title>
+
+</head>
+<body> 
+<header >
+	<table cellspacing="20px" align="center" width="80%">
+		
+	<tr>
+		<td width="40%" >
+
+			<a href="reservation.html"> <img src="img/images.png" height="60px" alt="pizza delivery boy">  </a> 
+		</td>
+<td width="20%">
+	<a href="home.html">home</a>
+
+</td>
+        <td width="20%">
+			<a href="job.html"><button type="button">Job application</button></a>
+		</td>
+         <td width="20%">
+					<a href="feedback.html">Feedback</a>
+		</td>
+
+	</tr>
+
+	</table>
+
+
+
+<hr>
+
+</header>
+
+    <center>
+        <form>
+            <fieldset>    
+                <legend>Information</legend>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <label for="position">Position: </label>
+                        </td>
+                        <td align="left">
+                            <select name="position" id="position" autofocus>
+                                <option value="manager">Manager</option>
+                                <option value="secretary">Secretary</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="name">Name: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="name" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="nationality">Nationality: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nationality" id="nationality">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="birthdate">Birthdate: </label>
+                        </td>
+                        <td align="left">
+                            <input type="date" name="bod" id="bod" autocomplete="bday">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="address">Address: </label>
+                        </td>
+                        <td align="left">
+                            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="telephone">Telephone: </label>
+                        </td>
+                        <td align="left">
+                            <input type="tel" name="telephone" id="telephone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="UserEmail">Email: </label>
+                        </td>
+                        <td align="left">
+                            <input type="email" name="userEmail" id="userEmail" required="required">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend>Educational Background</legend>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <label for="highestEducation">Highest education level: </label>
+                        </td>
+                        <td align="left">
+                            <select name="highestEducation" id="educ">
+                                <option value="phd">PHD</option>
+                                <option value="doctrate">Doctrate</option>
+                                <option value="degree">Degree</option>
+                                <option value="high">High School Diploma</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left"><label for="qual">Qualifications</label></td>
+                        <td align="left">
+                            <input type="checkbox" name="qual">Communication <br>
+                            <input type="checkbox" name="qual">Communication <br>
+                            <input type="checkbox" name="qual">Communication <br>
+                            <input type="checkbox" name="qual">Communication <br>
+                            <input type="checkbox" name="qual">Communication <br>
+                            <input type="checkbox" name="qual">Communication <br>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <label for="years">Number of years(0-10): </label>
+                        </td>
+                        <td>
+                            <input type="range" name="years" id="years" min="0" max="10" value="0" step="1">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend>Personal Statement</legend>
+            </fieldset><br>
+            <fieldset>
+                <legend>Refrees</legend><br>
+                <fieldset>
+                    <legend>Refree1</legend>
+                     <table>
+                         <tr>
+                            <td align="left">
+                                <label for="refree1Name">Name: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="refree1Name" id="name">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="refree1Occupation">Occupation: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="refree1Occupation" id="name">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="refree1rel">Relationship: </label>
+                            </td>
+                            <td align="left">
+                                <input list="rel" name="rel" id="rel">
+                                <datalist name="rel">
+                                    <option value="Employer">Employer</option>
+                                    <option value="Mentor">Mentor</option>
+                                </datalist>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="address">Address: </label>
+                            </td>
+                            <td align="left">
+                                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <label for="ref1telephone">Telephone: </label>
+                            </td>
+                            <td align="left">
+                                <input type="tel" name="ref1telephone" id="ref1telephone">
+                            </td>
+                        </tr>
+                     </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Refree2</legend>
+                     <table>
+                         <tr>
+                            <td align="left">
+                                <label for="refree2Name">Name: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="refree2Name" id="name">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="refree2Occupation">Occupation: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="refree2Occupation" id="name">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="refree2rel">Relationship: </label>
+                            </td>
+                            <td align="left">
+                                <input list="rel" name="rel" id="rel">
+                                <datalist name="rel" id="rel">
+                                    <option value="Employer">Employer</option>
+                                    <option value="Mentor">Mentor</option>
+                                </datalist>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td align="left">
+                                <label for="address">Address: </label>
+                            </td>
+                            <td align="left">
+                                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <label for="ref2telephone">Telephone: </label>
+                            </td>
+                            <td align="left">
+                                <input type="tel" name="ref2telephone" id="ref2telephone">
+                            </td>
+                        </tr>
+                     </table>
+                </fieldset>
+
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear Form">
+        </form>
+    </center>
+</body>
+</html>
