@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Motivation for You Whenever, Wherever." />
+    <meta name="keywords" content="Podcast, Videos and Articles" />
+    <meta name="author" content="Yosef lakew" />
+    <meta name="language" content="English" />
+
+    <title>event handlers - Lab Two</title>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td width="300px">
+                <img src="../../resources/images/logo_gold.png" alt="logo" width="50px" />
+            </td>
+            <td width="1105px" align="right">
+                <p>
+                    <a href="#">Podcasts</a>| 
+                    <a href="#">Articles</a>|
+                    <a href="#">Ideas</a>| 
+                    <a href="#">About Us</a>|
+                    <a href="#">Contact Us</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table align="center">
+        <tr>
+            <td align="right" colspan="2">
+                <a href="#bottom">Go to Bottom</a>
+            </td>
+        </tr>
+        <tr>
+            <td width="1000px" valign="top">
+                <h1>Eric Hoffer and the Power of Self-Education</h1>
+                <img src="../../resources/images/banners/life1.jpg" alt="Man Sitting and Watching Sunset" width="950px" />
+
+                <p>
+                    I recently read The True Believer by Eric Hoffer. It’s a book about how mass movements evolve. With a lot of historical examples, the book explains the patterns and common threads among them. It’s an insightful book and reading it was a great learning
+                    experience for me.
+                </p>
+                <p>
+                    <img src="" alt="The True Believer Book cover" height="70px" width="100px" align="left" /> What I’d like to share with you here is not the content of the book, though. Instead, I’d like to share with you about the author. You see,
+                    I didn’t know about Eric Hoffer before. <br /><br />But I imagined he must be a famous professor from a well-known university. I mean, what else could explain the depth of his insights? The True Believer is an influential book. Here
+                    is how Wikipedia put it... read more
+                </p>
+                <hr />
+                <h3>New Podcast</h3>
+                <h2>Jack Ma - How I Overcame Failure</h2>
+                <audio controls onpause="myFunction()" onplay="functionPlay()">
+            <source
+              src="../../resources/audio/Jack Ma - How I Overcame Failure.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+                <hr />
+                <h3>Pick of The Week</h3>
+                <h2>24 Hours A Day</h2>
+                <video controls width="950px" onpause="myFunction()" onplay="functionPlay()">
+            <source src="../../resources/video/24_HOURS.mp4" type="video/mp4" />
+          </video>
+            </td>
+            <td valign="top" width="405px">
+                <h2>Recent Posts</h2>
+
+                <ul>
+                    <li><b>Articles</b></li>
+                    <ul>
+                        <li>
+                            The Importance of Goals, Especially During Difficult Times
+                        </li>
+                        <li>5 Steps to Discovering Your Life Purpose in 2021!</li>
+                    </ul>
+                    <li>Ideas</li>
+                    <ul>
+                        <li>10 Books to Read in The Fall</li>
+                        <li>Top Web Development Projects Ideas</li>
+                    </ul>
+                </ul>
+                <h2>Most Viewed Articles</h2>
+                <ol type="I">
+                    <li>
+                        Instant Gratification Is Stopping You From REaching Your Goals.
+                    </li>
+                    <li>Stop Juggling Between Work And Life</li>
+                </ol>
+
+                <h2>IP Project Winners</h2>
+                <pre>
+----------------------------------
+Rank    Award
+----------------------------------
+First   Free hosting and support
+Second  5GB Mobile Data
+Third   1GB Mobile Data
+----------------------------------
+                </pre
+          >
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <hr />
+        </td>
+      </tr>
+      <tr id="bottom">
+        <td align="left">
+          <p>
+            Follow Us On: <a href="">Facebook</a>|
+            <a href="">Twitter</a>
+          </p>
+        </td>
+        <td align="right">
+          <a href="">Privacy</a>|
+          <a href="">Terms of Use</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          Copyright © AASTU SEng 2021, All Rights Reserved
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function myFunction() {
+        alert("The media was paused");
+      }
+
+      let functionPlay = () => {
+        alert("The media is Playing!");
+      };
+    </script>
+  </body>
+</html>
