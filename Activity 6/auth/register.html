@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website that teaches the Power of Self-Education">
+        <meta name = "keyword" content="Self-Education, Eric Hoffer, Power">
+        <meta name="author" content="AASTU SEng">
+        <meta name = "tag" content="h1, table, td, tr, br, hr, img, map, vido, audio, source, p, h1, h2, h3, ul, li, ol,pre, a ">
+
+    
+    <title>Lab 2</title>
+    </head>
+
+
+    <body onload="window.alert('Page successfully loaded');">
+    <table width = "70%" cellspacing = '28px' align = 'center'>
+            
+            
+        <tr>
+            <td align = 'left' ><img src="../resources/images/logo_gold.png" alt="logo image" width="59px"></td>
+
+            <td align= "right" ><a href="#">Product</a>|
+                <a href="../home.html">Home</a>|
+                <a href="#">Ideas</a>|
+                <a href="./register.html">Register</a>|
+                <a href="./signin.html">Sign in</a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table align="center" width = '80%' cellspacing = '38px'>
+        <tr><td align="right" colspan="2"><a href="#bottum " >Go To bottom</a></td></tr>
+        <tr>
+            <td width = '75%'>
+                <h1>Register</h1>
+                <form action="">
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="FullName" maxlength="50" size="50%" required onfocus="focusevent()" onblur="myFunction()"><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="Phone" required size="50%" onkeydown="keydownevent()"><br>
+                    <label for="age">Age</label><br>
+                    <input type="number" name="Age" id="age" min="18" max="80" required><br>
+                    <label for="color">Your Favorite Color</label><br>
+                    <input type="color" name="Color" id="color"><br>
+                    <label for="bd">Birthdate</label><br>
+                    <input type="date" name="BD" id="bd"><br>
+                    <label for="gender">Gender</label><br>
+                    <label for="female">Female</label>
+                    <input type="radio" name="Gender" id="female" value="female">
+                    <label for="male">Male</label>
+                    <input type="radio" name="Gender" id="male" value="male"><br><br>
+                    <label for="password">Password</label><br>
+                    <input onblur="verifyPassword()" type="password" name="Password" id="password" minlength="6" maxlength="32" ><br>
+                    <p id="message" ></p>
+                    <label for="confirem">Confirm Password</label><br>
+                    <input type="password" name="Confirem" id="confirem" minlength="6" maxlength="32"><br>
+                    <label for="skill">Skills</label><br>
+                    <ul>
+                    
+                    <li><input type="checkbox" name="Skill" id="html" value="html"> HTML</li>
+                    <li><input type="checkbox" name="Skill" id="css" value="css"> CSS</li>
+                    <li><input type="checkbox" name="Skill" id="js" value="js"> JavaScript</li>
+                    <li><input type="checkbox" name="Skill" id="php" value="php"> PHP</li>
+                    </ul>
+
+                    <label for="country">Country</label><br>
+                    <select name="Country" id="country">
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="USA">USA</option>
+                    </select><br>
+                    <label for="photo">Photo</label><br>
+                    <input type="file" name="Photo" id="photo"><br>
+                    <label for="describe">Describe Yourself</label><br>
+                    <textarea name="Desc" id="describe" cols="60" rows="10"></textarea><br>
+                    <button  type="submit" id="btn">Submit</button>
+                    <button type="reset" id="btn" onclick = "sayHello()">Reset</button>
+                </form>
+
+                <iframe src="../home.html" frameborder="0" allowfullscreen='false' ></iframe>
+                <p>Scrolled <span id="scroll">0</span> times.</p>
+            </td>
+                <td width = '25%' valign = 'top'>
+                    <details>
+                   <summary onmouseover=mouseoverevent() >Recent Posts</summary>
+                    <ul>
+                        <li>
+                            <h3>Articles</h3>
+                              <ul>
+                                <li>The Importance of Goals,
+                                    Especially During Difficult
+                                    Times
+                                    </li>
+                                <li>5 Steps to Discovering Your
+                                    Life Purpose In 2022!
+                                    </li>
+                              </ul>
+                        
+                            </details>
+                            <details>
+                            <summary > Ideas</summary>
+                              <ul>
+                                <li>10 Books to Read in The Fall</li>
+                                <li>Top Web Development Projects
+                                    Ideas</li>
+                              </ul></details>
+                        </li>
+                    </ul>
+                    <details>
+                    <summary>Most Viewed Articls</summary>
+                    <ol type="I">
+                        <li>Instant Gratification Is Stopping You
+                            From Reaching Your Goals! 
+                        </li>
+                        <li>
+                            Stop Juggling Between Work And Life
+                        </li>
+                    </ol></details>
+                    <h2>IP Project Winners</h2>
+                    <pre>
+----------------------------------
+Rank               Award
+----------------------------------
+First           Free hosting and support
+Second          5GB Mobile Data
+Third           1GB Mobile Data
+----------------------------------
+                    </pre>
+                    
+                </td>
+             
+
+<p id="demo"></p></td>
+            </tr>
+                <tr>
+                    <td id="bottom" colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td width = "75%" align="left">Follow Us On: <a href="#">Facebook</a>| <a href="#">Twitter</a> </td>
+                    <td width = '25%' align="right"> <a href="#">Privacy</a>  | <a href="#">Terms of Use</a> </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        Copyright © AASTU SEng 2021, All Rights Reserved
+                    </td>
+                </tr>
+        </table>
+    <script src="../js.js"></script>
+    </body>
+    </html>

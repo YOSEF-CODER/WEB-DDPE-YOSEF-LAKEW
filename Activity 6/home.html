@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This is a website that teaches the Power of Self-Education"
+    />
+    <meta name="keyword" content="Self-Education, Eric Hoffer, Power" />
+    <meta name="author" content="AASTU SEng" />
+    <meta
+      name="tag"
+      content="h1, table, td, tr, br, hr, img, map, vido, audio, source, p, h1, h2, h3, ul, li, ol,pre, a "
+    />
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  
+      <table width = "70%" cellspacing = '28px' align = 'center'>
+        <tr>
+          <td style="float: left; margin-right: 100px">
+            <img
+              src="./resources/images/logo_gold.png"
+              alt="logo image"
+              width="59px"
+            />
+          </td>
+
+          <td align="right">
+            <a href="#">Product</a>| <a href="#">Articles</a>|
+            <a href="#">Ideas</a>| <a href="./auth/register.html">register</a>|
+            <a href="./auth/signin.html">sign in</a>
+          </td>
+        </tr>
+      </table>
+   
+    <hr />
+    <table align="center" width="80%" cellspacing="38px">
+      <tr>
+        <td align="right" colspan="2"><a href="#bottom">Go To bottom</a></td>
+      </tr>
+      <tr>
+        <td> 
+          <div id="myimage"></div>
+
+          <h1>Eric Hoffer and the Power of Self-Education
+            <button type="button" onclick="swapImageWithVideo()" style="background-color: yellow; width: 150px; height: 40px;"><b>Swap Image and Video</b></button>
+          </h1>
+         
+              <img width="100%"
+                id="hike"
+                src="./resources/images/banners/life1.jpg"
+                alt="person"
+                usemap="#image-map"
+              />
+          </div>
+          <map name="image-map">
+            <area
+              target="_blank"
+              alt="Person"
+              title="Person"
+              href="https://www.thoughtco.com/thmb/MHtEonxmAahYmFhLKD75xcJzsyg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-518338865-58b843ec3df78c060e67bf43.jpg"
+              coords="964,217,50"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="Backpack"
+              title="Backpack"
+              href="https://www.firesupplydepot.com/blaze-orange-deluxe-backpack.html"
+              coords="1031,324,1071,264,1100,287,1110,310,1112,336,1119,356,1118,374,1119,412,1106,436,1101,453,1085,452,1067,459,1048,458,1040,417,1031,376"
+              shape="poly"
+            />
+            <area
+              target="_blank"
+              alt="Sun"
+              title="Sun"
+              href="https://www.worldatlas.com/articles/amazing-facts-about-the-sun.html"
+              coords="388,178,123"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="Nature"
+              title="Nature"
+              href="https://pixabay.com/images/search/green%20nuture/"
+              coords="3,342,517,292,756,191,926,281,921,335,909,357,759,360,697,425,577,551,121,573,2,567,8,438"
+              shape="poly"
+            />
+          </map>
+          <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            I recently read The True Believer by Eric Hoffer. It’s a book about
+            how mass movements evolve. With a lot of historical examples, the
+            book explains the patterns and common threads among them. It’s an
+            insightful book and reading it was a great learning experience for
+            me.
+          </p>
+          <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            <img
+              src=""
+              alt="The True Beliver book cover"
+              width="79px"
+              align="left"
+            />What I’d like to share with you here is not the content of the
+            book, though. Instead, I’d like to share with you about the author.
+            <br />
+            <br />
+            You see, I didn’t know about Eric Hoffer before. But I imagined he
+            must be a famous professor from a well-known university. I mean,
+            what else could explain the depth of his insights? The True Believer
+            is an influential book. Here is how <a href="">Wikipedia</a> put
+            it... <a href="" 3>read more</a>
+          </p>
+          <hr />
+          <div id="myaudio">
+
+              <h3>New Podcast</h3>
+              <h1>Jack Ma - How I Overcame Failure</h1>
+
+              <audio controls id="audio">
+                    <source
+                      src="../../resources/audio/Jack Ma - How I Overcame Failure.mp3"
+                      type="audio/mpeg"
+                    />             
+              </audio>
+              <br>
+              
+          </div>
+          <button type="button" onclick="removeAudio()" style="background-color: yellow; width: 150px; height: 50px;"><b>Remove Audio</b></button>
+         
+          <hr />
+
+           <div id="myvideo">
+               <h3 id="header">Pick of The Week</h3>
+               <h1>24 Hours A Day</h1>
+         
+               <video width="100%" id="video" controls oncanplay="myFunction()">
+                 <source src="../../resources/video/24_HOURS.mp4" type="video/mp4" />
+               </video>
+              </div>
+          <br /><br />
+        </td>
+        <td width="25%" valign="top">
+          <h2>Recent Posts</h2>
+          <ul>
+            <li>
+              <h3>Articles</h3>
+              <ul>
+                <li>
+                  The Importance of Goals, Especially During Difficult Times
+                </li>
+                <li>5 Steps to Discovering Your Life Purpose In 2022!</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Ideas</h3>
+              <ul>
+                <li>10 Books to Read in The Fall</li>
+                <li>Top Web Development Projects Ideas</li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Most Viewed Articls</h2>
+          <ol type="I">
+            <li>
+              Instant Gratification Is Stopping You From Reaching Your Goals!
+              li>
+            </li>
+            <li>Stop Juggling Between Work And Life</li>
+          </ol>
+          <h2>IP Project Winners</h2>
+          <pre>
+----------------------------------
+Rank               Award
+----------------------------------
+First           Free hosting and support
+Second          5GB Mobile Data
+Third           1GB Mobile Data
+----------------------------------
+                    </pre
+          >
+          <div id="iframe">
+            <button type="button" onclick="addNewElement()" style="background-color: yellow; width: 150px; height: 50px; "><b>Add Iframe</b></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="bottom" colspan="2"><hr /></td>
+      </tr>
+      <tr>
+        <td width="75%" align="left">
+          Follow Us On: <a href="#">Facebook</a>| <a href="#">Twitter</a>
+        </td>
+        <td width="25%" align="right">
+          <a href="#">Privacy</a> | <a href="#">Terms of Use</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          Copyright © AASTU SEng 2021, All Rights Reserved
+        </td>
+      </tr>
+    </table>
+  <script src="./js.js"></script>
+  </body>
+</html>
